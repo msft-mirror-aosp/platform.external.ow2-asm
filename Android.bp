@@ -7,3 +7,44 @@ license {
     license_kinds: ["SPDX-license-identifier-BSD-3-Clause"],
     license_text: ["LICENSE.txt"],
 }
+
+java_library {
+    name: "ow2-asm",
+    srcs: ["asm/src/main/**/*.java"],
+}
+
+java_library {
+    name: "ow2-asm-analysis",
+    srcs: ["asm-analysis/src/main/**/*.java"],
+    libs: [
+        "ow2-asm",
+        "ow2-asm-tree",
+    ],
+}
+
+java_library {
+    name: "ow2-asm-commons",
+    srcs: ["asm-commons/src/main/**/*.java"],
+    libs: [
+        "ow2-asm",
+        "ow2-asm-tree",
+    ],
+}
+
+java_library {
+    name: "ow2-asm-tree",
+    srcs: ["asm-tree/src/main/**/*.java"],
+    libs: [
+        "ow2-asm",
+    ],
+}
+
+java_library {
+    name: "ow2-asm-util",
+    srcs: ["asm-util/src/main/**/*.java"],
+    libs: [
+        "ow2-asm",
+        "ow2-asm-tree",
+        "ow2-asm-analysis",
+    ],
+}
