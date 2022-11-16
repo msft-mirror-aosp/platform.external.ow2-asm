@@ -1,0 +1,9 @@
+package {
+    default_applicable_licenses: ["external_ow2_asm_license"],
+}
+
+license {
+    name: "external_ow2_asm_license",
+    license_kinds: ["SPDX-license-identifier-BSD-3-Clause"],
+    license_text: ["LICENSE.txt"],
+}
