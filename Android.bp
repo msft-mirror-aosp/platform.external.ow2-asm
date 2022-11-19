@@ -10,11 +10,13 @@ license {
 
 java_library {
     name: "ow2-asm",
+    host_supported: true,
     srcs: ["asm/src/main/**/*.java"],
 }
 
 java_library {
     name: "ow2-asm-analysis",
+    host_supported: true,
     srcs: ["asm-analysis/src/main/**/*.java"],
     libs: [
         "ow2-asm",
@@ -24,6 +26,7 @@ java_library {
 
 java_library {
     name: "ow2-asm-commons",
+    host_supported: true,
     srcs: ["asm-commons/src/main/**/*.java"],
     libs: [
         "ow2-asm",
@@ -33,6 +36,7 @@ java_library {
 
 java_library {
     name: "ow2-asm-tree",
+    host_supported: true,
     srcs: ["asm-tree/src/main/**/*.java"],
     libs: [
         "ow2-asm",
@@ -41,6 +45,7 @@ java_library {
 
 java_library {
     name: "ow2-asm-util",
+    host_supported: true,
     srcs: ["asm-util/src/main/**/*.java"],
     libs: [
         "ow2-asm",
